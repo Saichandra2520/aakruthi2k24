@@ -1,0 +1,708 @@
+@font-face {
+    src: url(/fonts/GlacialIndifference-Bold.otf);
+    font-family: gidb;
+}
+
+@font-face {
+    font-family: gidr;
+    src: url(/fonts/GlacialIndifference-Regular.otf);
+}
+
+
+/* Navbar styles */
+/* Navbar styles */
+.container-fluid{
+    background-color: #3aafa9;
+}
+  
+  .navbar-nav .nav-item {
+    padding: 1.5rem;
+  }
+  
+  @media (min-width: 992px) {
+    .navbar-nav .nav-item {
+      transition: transform 0.3s ease;
+    }
+  
+    .navbar-nav .nav-item:hover {
+      transform: scale(1.3);
+    }
+  
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link:focus {
+      color: #2b7a78;
+    }
+  
+    .navbar-toggler {
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+  
+    .navbar-toggler:hover {
+      transform: scale(1.1);
+      background-color: #2C3E50;
+    }
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  .navbar-brand {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding-left: 5%;
+  }
+  
+  .navbar-nav {
+    list-style: none;
+    margin: 0;
+  }
+  .navbar .scrolled {
+    background-color: #333; /* Change to desired color */
+  }
+  .navbar-nav .nav-item {
+    padding: 1.5rem;
+  }
+  
+  .navbar-nav .nav-link {
+    text-decoration: none;
+    color: white;
+    font-family: gidr;
+    font-size: large;
+  }
+
+/* Container 1 styles */
+.container1 {
+    padding: 11rem 0;
+    background-color: white;
+    background-image: url("vrgoooo.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.ter {
+    text-align: center;
+    font-size: 5rem;
+    padding-top: 3rem;
+    color: #2b7a78;
+    font-family: gidb;
+}
+
+.calendar-icon,
+.location-icon {
+    margin-top: 20px;
+    fill: black;
+}
+
+.bi-calendar2-check,
+.bi-geo-alt-fill {
+    width: 35px;
+    height: 50px;
+    fill: black;
+}
+
+.calendar-text,
+.loc-text {
+    margin-left: 10px;
+    font-size: 1.2rem;
+    color: black;
+    font-family: gidb;
+    font-weight: 500;
+}
+
+
+.heading span {
+    color: #2b7a78;
+    font-weight: bolder;
+    font-family: Helvetica, sans-serif;
+}
+
+.heading {
+    color: #3aafa9;
+    font-weight: 800;
+    font-family: gidb;
+}
+
+.about {
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+    text-align: center;
+    font-size: 1.5rem;
+    padding-left: 1.8rem;
+}
+
+.about-text {
+    font-family: gidr;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.grid3 {
+    padding-right: 1rem;
+    padding-top: 2rem;
+
+}
+
+.cont {
+    display: grid;
+    height: 60vh;
+    width: 100%;
+    grid-template-columns: 50% 10% 40%;
+    grid-gap: 0;
+}
+
+.events {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10rem;
+    display: grid;
+    height: 60vh;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.events-title {
+    text-align: center;
+}
+
+.ima {
+    grid-row-start: 1;
+    width: 100%;
+    height: 85%;
+    padding-left: 4em;
+    padding-top: 2rem;
+    padding-right: 0;
+}
+
+.events1 {
+    padding-right: 2rem;
+}
+
+@media (max-width: 1280px) {
+    .navbar-brand {
+        margin-bottom: 0rem;
+    }
+
+    .container {
+        height: auto;
+    }
+
+    .ter {
+        font-size: 4rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-texts {
+        font-size: 0.8rem;
+    }
+
+    .imgcl {
+        width: 100%;
+    }
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.ima img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .container-2 {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .ima {
+        width: 50%;
+        margin-right: 20px;
+    }
+
+    .grid3 {
+        width: 50%;
+    }
+
+    .imgcl {
+        width: 50%;
+        height: 35%;
+
+    }
+
+}
+
+/* Section Events styles */
+.section-events {
+    width: 100%;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    background-color: #17252a;
+}
+
+.events-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.event-title {
+    font-family: gidr;
+    font-weight: 600;
+}
+
+.event-card-box {
+    height: 15rem;
+    background-color: #3aafa9;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.event-card {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-left: 12px;
+    align-items: center;
+    padding: 20px;
+}
+
+.event-card h4 {
+    color: white;
+    font-size: 20px;
+}
+
+.event-card-box {
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card-img {
+    display: flex;
+    justify-content: center;
+}
+
+.event-card-box img {
+    width: 100px;
+}
+
+.event-card-box p {
+    color: black;
+    text-align: justify;
+}
+
+.event-moredetails {
+    text-align: center;
+}
+
+.event-moredetails a {
+    color: white;
+}
+
+.event-button button {
+    font-weight: 600;
+    padding: 8px 40px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.event-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    font-family: gidr;
+}
+
+.event-text {
+    font-family: gidr;
+    font-size: 18px;
+}
+
+.timeline-img {
+    width: 100%;
+    height: 40%;
+    /* Adjust the maximum height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0 auto;*/
+    object-fit: contain;
+    background-color: #17252a;
+    padding-bottom: 0.5rem;
+
+}
+
+
+
+
+.sponsors {
+    display: flex;
+    max-width: 90vw;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+   
+}
+
+.sponsors-title {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.sponsor-card {
+    margin: 10px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding: 20px;
+}
+.sponsor-card img {
+    max-width: 250px;
+}
+
+/* CSS for hovering effect */
+.event-card-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .event-card-box:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.event-button button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.event-button button:hover {
+    background-color: #2C3E50;
+    transform: translateY(1px);
+}
+
+/* Define CSS animation for sliding in from left */
+/* Define CSS animation for sliding in from left */
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Define CSS animation for sliding in from right */
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Apply animations to events sections */
+.events-left {
+    animation: slideInFromLeft 1s ease forwards;
+    opacity: 0;
+}
+
+.events-right {
+    animation: slideInFromRight 1s ease forwards;
+    opacity: 0;
+}
+
+/* Add this media query at the end of your CSS file */
+
+@media (max-width: 768px) {
+
+    /* Navbar styles */
+    .navbar-nav .nav-item {
+        padding: 0.5rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    /* Container 1 styles */
+    .container1 {
+        padding: 5rem 0;
+    }
+
+    .ter {
+        font-size: 3rem;
+    }
+
+    .calendar-text,
+    .loc-text {
+        font-size: 1rem;
+    }
+
+    /* Container 2 styles */
+    .container-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ima {
+        width: 100%;
+        padding: 0;
+    }
+
+    .grid3 {
+        width: 100%;
+        padding-top: 2rem;
+    }
+
+    /* Section Events styles */
+    .events-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 1rem;
+    }
+
+    .event-card {
+        width: 85%;
+        margin-bottom: 2rem;
+    }
+
+    .sponsors {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .sponsor-card {
+        width: 85%;
+    }
+
+    .event-text2 {
+        font-size: 12px;
+    }
+}
+
+.contact1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #def2f1;
+    padding: 1rem;
+}
+
+.contact1 .contactform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Center the child elements vertically */
+    width: 100%;
+}
+
+.contacts,
+.cont4 {
+    padding: 2rem;
+    background-color: white;
+    text-align: center;
+    /* Center the content inside .contacts and .cont4 */
+}
+
+.card-link {
+    font-size: 15px;
+    text-decoration: none;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.contacts .inputBox input,
+.contacts .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #2C3E50;
+    outline: none;
+    resize: none;
+}
+
+.contacts .inputBox {
+    position: relative;
+    margin-top: 10px;
+}
+
+.contacts .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #6C5B7B;
+}
+
+.contacts .inputBox input:focus~span,
+.contacts .inputBox input:valid~span,
+.contacts .inputBox textarea:focus~span,
+.contacts .inputBox textarea:valid~span {
+    color: #2b7a78;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contacts .inputBox input[type="submit"] {
+    width: 100;
+    border-radius: 5%;
+    background: #3aafa9;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.card-body {
+    background-color: #3aafa9;
+
+
+
+}
+
+.card {
+    background-color: #def2f1;
+    border-radius: 10%;
+    z-index: 1;
+    padding: 0;
+    width: auto;
+    text-align: center;
+}
+
+.contacts {
+    background-color: #def2f1;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.contacts>form {
+    width: 50%;
+}
+
+.event-text2 {
+    font-family: gidr;
+    font-size: 15px;
+}
+
+
+.image-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transform: perspective(1000px) rotateY(0deg);
+    transition: transform 0.7s;
+  }
+  
+  .image-container span {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+  }
+  
+  .image-container span img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  
+  .btn-wrapper {
+    position: relative;
+    width: 80%;
+  }
+  
+  .btn {
+    position: absolute;
+    bottom: -80px;
+    background: rgba(25, 111, 186, 0.637);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 05px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    filter: brightness(1.5);
+  }
+  
+  #prev {
+    left: 20%;
+  }
+  
+  #next {
+    right: 20%;
+  }
+
+  .image-gallery{
+    width: 100%;
+  }
+
+  .gallery-div
+  {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background: white;
+  height: 80vh;
+  overflow: hidden;
+  }
+
+
+  
